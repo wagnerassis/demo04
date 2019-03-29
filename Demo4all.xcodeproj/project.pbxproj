@@ -16,7 +16,7 @@
 		C48C4BBC224BF53500D7387B /* PlaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C4BBB224BF53500D7387B /* PlaceViewController.swift */; };
 		C48C4BBE224BF54600D7387B /* PlacePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C4BBD224BF54600D7387B /* PlacePresenter.swift */; };
 		C48C4BC0224BF55800D7387B /* PlaceRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C4BBF224BF55800D7387B /* PlaceRouter.swift */; };
-		C48C4BC3224BF59800D7387B /* 4allService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C4BC2224BF59800D7387B /* 4allService.swift */; };
+		C48C4BC3224BF59800D7387B /* PlaceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C4BC2224BF59800D7387B /* PlaceService.swift */; };
 		C48C4BC7224BF76300D7387B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C4BC5224BF76200D7387B /* BaseViewController.swift */; };
 		C48C4BC8224BF76300D7387B /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C4BC6224BF76200D7387B /* BaseNavigationController.swift */; };
 		C48C4BCD224BF77C00D7387B /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C4BCA224BF77C00D7387B /* LoadingView.swift */; };
@@ -31,6 +31,11 @@
 		C48C4BE0224BF7A000D7387B /* ImageViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C4BD8224BF7A000D7387B /* ImageViewExtensions.swift */; };
 		C48C4BE4224C043300D7387B /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C48C4BE2224C043300D7387B /* ItemCell.xib */; };
 		C48C4BE5224C043300D7387B /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C4BE3224C043300D7387B /* ItemCell.swift */; };
+		C4EFFDB1224E65A100A4BA8B /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFFDB0224E65A100A4BA8B /* API.swift */; };
+		C4EFFDB5224E802F00A4BA8B /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFFDB4224E802F00A4BA8B /* Path.swift */; };
+		C4EFFDB7224E851E00A4BA8B /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFFDB6224E851E00A4BA8B /* Place.swift */; };
+		C4EFFDB9224E8C3800A4BA8B /* PlaceList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4EFFDB8224E8C3800A4BA8B /* PlaceList.swift */; };
+		C4EFFDBC224EA50700A4BA8B /* PlaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C4EFFDBB224EA50700A4BA8B /* PlaceView.xib */; };
 		D91BA3E2EE14958FF5BE70FF /* Pods_Demo4all.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D305FB2BECB13BAA47C1574E /* Pods_Demo4all.framework */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +53,7 @@
 		C48C4BBB224BF53500D7387B /* PlaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceViewController.swift; sourceTree = "<group>"; };
 		C48C4BBD224BF54600D7387B /* PlacePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacePresenter.swift; sourceTree = "<group>"; };
 		C48C4BBF224BF55800D7387B /* PlaceRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceRouter.swift; sourceTree = "<group>"; };
-		C48C4BC2224BF59800D7387B /* 4allService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4allService.swift; sourceTree = "<group>"; };
+		C48C4BC2224BF59800D7387B /* PlaceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceService.swift; sourceTree = "<group>"; };
 		C48C4BC5224BF76200D7387B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		C48C4BC6224BF76200D7387B /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		C48C4BCA224BF77C00D7387B /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -63,6 +68,11 @@
 		C48C4BD8224BF7A000D7387B /* ImageViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewExtensions.swift; sourceTree = "<group>"; };
 		C48C4BE2224C043300D7387B /* ItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		C48C4BE3224C043300D7387B /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		C4EFFDB0224E65A100A4BA8B /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		C4EFFDB4224E802F00A4BA8B /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		C4EFFDB6224E851E00A4BA8B /* Place.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		C4EFFDB8224E8C3800A4BA8B /* PlaceList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceList.swift; sourceTree = "<group>"; };
+		C4EFFDBB224EA50700A4BA8B /* PlaceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceView.xib; sourceTree = "<group>"; };
 		D305FB2BECB13BAA47C1574E /* Pods_Demo4all.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Demo4all.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -144,6 +154,7 @@
 		C48C4BB6224BF45300D7387B /* Place */ = {
 			isa = PBXGroup;
 			children = (
+				C4EFFDBA224EA4D900A4BA8B /* Views */,
 				C48C4BBB224BF53500D7387B /* PlaceViewController.swift */,
 				C48C4BBD224BF54600D7387B /* PlacePresenter.swift */,
 				C48C4BBF224BF55800D7387B /* PlaceRouter.swift */,
@@ -154,7 +165,11 @@
 		C48C4BC1224BF58100D7387B /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				C48C4BC2224BF59800D7387B /* 4allService.swift */,
+				C4EFFDB6224E851E00A4BA8B /* Place.swift */,
+				C4EFFDB0224E65A100A4BA8B /* API.swift */,
+				C48C4BC2224BF59800D7387B /* PlaceService.swift */,
+				C4EFFDB4224E802F00A4BA8B /* Path.swift */,
+				C4EFFDB8224E8C3800A4BA8B /* PlaceList.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -197,6 +212,14 @@
 			children = (
 				C48C4BE2224C043300D7387B /* ItemCell.xib */,
 				C48C4BE3224C043300D7387B /* ItemCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C4EFFDBA224EA4D900A4BA8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C4EFFDBB224EA50700A4BA8B /* PlaceView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -263,6 +286,7 @@
 			files = (
 				C48C4BE4224C043300D7387B /* ItemCell.xib in Resources */,
 				C48C4BAE224BB8D400D7387B /* LaunchScreen.storyboard in Resources */,
+				C4EFFDBC224EA50700A4BA8B /* PlaceView.xib in Resources */,
 				C48C4BAB224BB8D400D7387B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +303,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-Demo4all/Pods-Demo4all-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 				"${BUILT_PRODUCTS_DIR}/OCMixins/OCMixins.framework",
@@ -290,6 +315,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OCMixins.framework",
@@ -332,10 +358,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C48C4BBE224BF54600D7387B /* PlacePresenter.swift in Sources */,
+				C4EFFDB5224E802F00A4BA8B /* Path.swift in Sources */,
 				C48C4BDB224BF7A000D7387B /* ScreenExtensions.swift in Sources */,
 				C48C4BB8224BF50400D7387B /* HomePresenter.swift in Sources */,
-				C48C4BC3224BF59800D7387B /* 4allService.swift in Sources */,
+				C48C4BC3224BF59800D7387B /* PlaceService.swift in Sources */,
 				C48C4BE5224C043300D7387B /* ItemCell.swift in Sources */,
+				C4EFFDB9224E8C3800A4BA8B /* PlaceList.swift in Sources */,
 				C48C4BCF224BF77C00D7387B /* OpenExternalApps.swift in Sources */,
 				C48C4BCD224BF77C00D7387B /* LoadingView.swift in Sources */,
 				C48C4BBA224BF51E00D7387B /* HomeRouter.swift in Sources */,
@@ -343,10 +371,12 @@
 				C48C4BA6224BB8D200D7387B /* HomeViewController.swift in Sources */,
 				C48C4BC7224BF76300D7387B /* BaseViewController.swift in Sources */,
 				C48C4BDF224BF7A000D7387B /* ColorExtensions.swift in Sources */,
+				C4EFFDB1224E65A100A4BA8B /* API.swift in Sources */,
 				C48C4BDE224BF7A000D7387B /* ViewExtensions.swift in Sources */,
 				C48C4BBC224BF53500D7387B /* PlaceViewController.swift in Sources */,
 				C48C4BCE224BF77C00D7387B /* Global.swift in Sources */,
 				C48C4BDA224BF7A000D7387B /* DateExtensions.swift in Sources */,
+				C4EFFDB7224E851E00A4BA8B /* Place.swift in Sources */,
 				C48C4BC0224BF55800D7387B /* PlaceRouter.swift in Sources */,
 				C48C4BC8224BF76300D7387B /* BaseNavigationController.swift in Sources */,
 				C48C4BA4224BB8D200D7387B /* AppDelegate.swift in Sources */,

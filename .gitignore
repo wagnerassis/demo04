@@ -1,3 +1,59 @@
+.DS_Store
+build/
+DerivedData/
+
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+*.xcuserstate
+*.project.xcworkspace/
+*.xcuserdata/
+
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+
+timeline.xctimeline
+playground.xcworkspace
+
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+
+Pods
+Agibank-US/Podfile.lock
+Agibank-US/Agibank-US.xcodeproj/xcuserdata
+Agibank-US/Agibank-US.xcworkspace/xcuserdata
+Agibank-US/Carthage
+fastlane/derived_data_path
+fastlane/README.md
+fastlane/report.xml
+fastlane/test_output/report.html
+fastlane/test_output/report.junit
+
 # Xcode
 #
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
@@ -16,6 +72,9 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+xcuserdata/*
+!xcuserdata/where/ever/Breakpoints.xcbkptlist
+!xcuserdata/where/ever/Breakpoints_v2.xcbkptlist
 
 ## Other
 *.moved-aside
@@ -28,16 +87,12 @@ xcuserdata/
 *.dSYM.zip
 *.dSYM
 
-## Playgrounds
-timeline.xctimeline
-playground.xcworkspace
 
 # Swift Package Manager
 #
 # Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
 # Packages/
 # Package.pins
-# Package.resolved
 .build/
 
 # CocoaPods
@@ -46,14 +101,14 @@ playground.xcworkspace
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-# Pods/
+Agibank-US/Pods/
 
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 
-Carthage/Build
+Agibank-US/Carthage/Build
 
 # fastlane
 #
@@ -64,5 +119,11 @@ Carthage/Build
 
 fastlane/report.xml
 fastlane/Preview.html
-fastlane/screenshots/**/*.png
+fastlane/screenshots
 fastlane/test_output
+Agibank-US/Agibank-US.xcworkspace/xcuserdata
+.DS_Store
+Agibank-US/Fabric.framework
+report.xml
+Agibank-US/Agibank-US.xcworkspace/xcuserdata/ilegra0195.xcuserdatad/UserInterfaceState.xcuserstate
+Agibank-US.xcworkspace/xcuserdata/ilegra0195.xcuserdatad/UserInterfaceState.xcuserstate

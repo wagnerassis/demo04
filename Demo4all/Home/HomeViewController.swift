@@ -20,11 +20,10 @@ class HomeViewController: BaseViewController {
         view.backgroundColor = .white
         title = "Home"
         
-        tableView.addRow(ItemCell.newRow(placeID: "a"))
-        tableView.addRow(ItemCell.newRow(placeID: "a"))
-        tableView.addRow(ItemCell.newRow(placeID: "a"))
-        tableView.addRow(ItemCell.newRow(placeID: "a"))
-        tableView.addRow(ItemCell.newRow(placeID: "a"))
+        setupTableView()
+        registerCell()
+        presenter.fetchTasks()
+        presenter.dataSource = self
     }
     
     fileprivate func setupTableView() {
@@ -62,3 +61,8 @@ class HomeViewController: BaseViewController {
     }
 }
 
+extension HomeViewController: HomeDataSource {
+    func fetchTasks(list: [String]) {
+        setupActionTableView(placeList: list)
+    }
+}

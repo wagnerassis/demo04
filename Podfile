@@ -9,6 +9,7 @@ def ui_pods
   pod 'IQKeyboardManagerSwift'
   pod 'TableManager'
   pod 'Kingfisher'
+  pod 'Alamofire', '~> 4.8.2'
 end
 
 target 'Demo4all' do

@@ -1,9 +1,16 @@
-//
-//  PlaceRouter.swift
-//  Demo4all
-//
-//  Created by ilegra0409 on 27/03/19.
-//  Copyright © 2019 Wagner Assis. All rights reserved.
-//
-
 import Foundation
+import UIKit
+
+class PlaceRouter {
+    
+    func createModule() -> UIViewController {
+        let presenter = PlacePresenter(delegate: self)
+        let placeViewController = PlaceViewController(presenter: presenter)
+        
+        return placeViewController
+    }
+}
+
+extension PlaceRouter: PlaceDelegate {
+
+}

@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.8.2)
   - IQKeyboardManagerSwift (6.2.0)
   - Kingfisher (5.3.0)
   - OCMixins (1.3.2)
@@ -7,6 +8,7 @@ PODS:
   - TableManager (1.11.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.8.2)
   - IQKeyboardManagerSwift
   - Kingfisher
   - OCMixins
@@ -16,6 +18,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
     - IQKeyboardManagerSwift
     - Kingfisher
     - OCMixins
@@ -24,6 +27,7 @@ SPEC REPOS:
     - TableManager
 
 SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
   Kingfisher: 4692c783ffb99e9e2e40a6eb3e518c3b96c6fa8c
   OCMixins: 606edbfe8e1bb1d5a3ff13046e33ba0ed9ffba20
@@ -31,6 +35,6 @@ SPEC CHECKSUMS:
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   TableManager: f37977cc9709548060b42dd3cb872ee7668cfe22
 
-PODFILE CHECKSUM: ff1b2e9d4289b7f4aeb8eb918caf66ace7d97b30
+PODFILE CHECKSUM: 1d2c050be8821087553487f7c05dc9d17b6c0963
 
 COCOAPODS: 1.6.0
