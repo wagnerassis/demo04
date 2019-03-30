@@ -24,13 +24,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="headerBg" translatesAutoresizingMaskIntoConstraints="NO" id="XPp-GP-2n5">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="280"/>
+                    <rect key="frame" x="20" y="10" width="374" height="280"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="280" id="lP3-2C-MWM"/>
                     </constraints>
                 </imageView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fav" translatesAutoresizingMaskIntoConstraints="NO" id="hvz-oG-GpT">
-                    <rect key="frame" x="314" y="229" width="80" height="80"/>
+                    <rect key="frame" x="298" y="236" width="80" height="80"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="80" id="0Go-xV-G1O"/>
@@ -38,7 +38,7 @@
                     </constraints>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOREM" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T61-Kb-ESA">
-                    <rect key="frame" x="20" y="292" width="214" height="40"/>
+                    <rect key="frame" x="35" y="302" width="214" height="40"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="0mb-1Z-PKx"/>
                         <constraint firstAttribute="width" constant="214" id="yB1-x9-Lp5"/>
@@ -50,13 +50,13 @@
             </subviews>
             <color key="backgroundColor" red="0.94891661405563354" green="0.94907897710800171" blue="0.94890636205673218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="XPp-GP-2n5" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="Rgw-02-aKn"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hvz-oG-GpT" secondAttribute="trailing" constant="20" id="U8g-wT-Dd1"/>
+                <constraint firstItem="XPp-GP-2n5" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" constant="-20" id="Rgw-02-aKn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hvz-oG-GpT" secondAttribute="trailing" constant="36" id="U8g-wT-Dd1"/>
                 <constraint firstItem="T61-Kb-ESA" firstAttribute="top" secondItem="XPp-GP-2n5" secondAttribute="bottom" constant="12" id="ZhY-0T-n3K"/>
-                <constraint firstItem="T61-Kb-ESA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="hTS-Et-FIn"/>
-                <constraint firstItem="hvz-oG-GpT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="185" id="kXF-6k-Ui4"/>
-                <constraint firstItem="XPp-GP-2n5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="orM-E2-fXt"/>
-                <constraint firstItem="XPp-GP-2n5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="vEj-Ng-Ku8"/>
+                <constraint firstAttribute="bottom" secondItem="hvz-oG-GpT" secondAttribute="bottom" constant="30" id="hEN-Gv-iP8"/>
+                <constraint firstItem="T61-Kb-ESA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="hTS-Et-FIn"/>
+                <constraint firstItem="XPp-GP-2n5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="orM-E2-fXt"/>
+                <constraint firstItem="XPp-GP-2n5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="vEj-Ng-Ku8"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
