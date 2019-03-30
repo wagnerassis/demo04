@@ -11,19 +11,59 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Tbr-dT-W6w">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="100" id="Tbr-dT-W6w" customClass="CommentCell" customModule="Demo4all" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Tbr-dT-W6w" id="av2-5b-6JS">
                 <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S3g-oe-BPh">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S3g-oe-BPh">
                         <rect key="frame" x="20" y="14" width="70" height="70"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="KIm-Li-Jdf"/>
+                            <constraint firstAttribute="width" constant="70" id="Q5D-rX-KPp"/>
+                        </constraints>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gti-et-lEf">
+                        <rect key="frame" x="98" y="20" width="185" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="185" id="Ct7-7v-MPD"/>
+                            <constraint firstAttribute="height" constant="40" id="xD5-vd-MQL"/>
+                        </constraints>
+                        <attributedString key="attributedText">
+                            <fragment content="Teste Silva                            Incrivel">
+                                <attributes>
+                                    <font key="NSFont" size="16" name="ArialMT"/>
+                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teste Silva IncrivelTeste Silva IncrivelTeste Silva IncrivelTeste Silva IncrivelTeste Silva Incrivel" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nyp-ps-Mwt">
+                        <rect key="frame" x="98" y="63" width="311" height="36.5"/>
+                        <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Nyp-ps-Mwt" secondAttribute="bottom" id="4MY-VQ-MOL"/>
+                    <constraint firstItem="gti-et-lEf" firstAttribute="top" secondItem="av2-5b-6JS" secondAttribute="top" constant="20" id="5Nn-Ix-blu"/>
+                    <constraint firstItem="S3g-oe-BPh" firstAttribute="top" secondItem="av2-5b-6JS" secondAttribute="top" constant="14" id="FdB-Ro-HeM"/>
+                    <constraint firstItem="gti-et-lEf" firstAttribute="leading" secondItem="S3g-oe-BPh" secondAttribute="trailing" constant="8" id="HuL-ZC-K05"/>
+                    <constraint firstItem="Nyp-ps-Mwt" firstAttribute="leading" secondItem="S3g-oe-BPh" secondAttribute="trailing" constant="8" id="KNQ-st-IdK"/>
+                    <constraint firstAttribute="trailing" secondItem="Nyp-ps-Mwt" secondAttribute="trailing" constant="5" id="dCv-fY-xgz"/>
+                    <constraint firstItem="Nyp-ps-Mwt" firstAttribute="top" secondItem="gti-et-lEf" secondAttribute="bottom" constant="3" id="lph-xs-DZf"/>
+                    <constraint firstItem="S3g-oe-BPh" firstAttribute="leading" secondItem="av2-5b-6JS" secondAttribute="leading" constant="20" id="w5s-aq-8pN"/>
+                </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="PhotoImageView" destination="S3g-oe-BPh" id="5Gn-HC-VZr"/>
+                <outlet property="commentLabel" destination="Nyp-ps-Mwt" id="afB-cc-qLo"/>
+                <outlet property="identificationLabel" destination="gti-et-lEf" id="x7U-Lw-V53"/>
+            </connections>
             <point key="canvasLocation" x="111.59420289855073" y="-92.410714285714278"/>
         </tableViewCell>
     </objects>
