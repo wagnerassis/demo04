@@ -27,6 +27,14 @@ extension UIImageView {
             }
         }
     }
+    
+    func rounded() {
+        layer.borderWidth = 1
+        layer.masksToBounds = false
+        layer.borderColor = UIColor.clear.cgColor
+        layer.cornerRadius = frame.height/2
+        clipsToBounds = true
+    }
 }
 
 extension UIImage {

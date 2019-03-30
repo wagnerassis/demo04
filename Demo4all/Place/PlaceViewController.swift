@@ -20,17 +20,7 @@ class PlaceViewController: BaseViewController {
         view.addSubview(tableView)
         setupTableView()
         registerCell()
-        
-        tableView.tableHeaderView = HeaderView()
-        tableView.sectionHeaderHeight = 400
-        tableView.addRow(PlaceDescCell.newRow(placeID: ""))
-        let sectionComments = Section()
-        sectionComments.addRow(CommentCell.newRow(comment: ""))
-        sectionComments.addRow(CommentCell.newRow(comment: ""))
-        sectionComments.addRow(CommentCell.newRow(comment: ""))
-        sectionComments.addRow(CommentCell.newRow(comment: ""))
-        sectionComments.addRow(CommentCell.newRow(comment: ""))
-        tableView.addSection(sectionComments)
+        putCells()
     }
     
     fileprivate func setupTableView() {
@@ -51,5 +41,20 @@ class PlaceViewController: BaseViewController {
     fileprivate func registerCell() {
         tableView.register(UINib(nibName: "CommentCell", bundle: nil), forCellReuseIdentifier: "CommentCell")
         tableView.register(UINib(nibName: "PlaceDescCell", bundle: nil), forCellReuseIdentifier: "PlaceDescCell")
+    }
+    
+    fileprivate func putCells() {
+        let sectionHeader = Section()
+        sectionHeader.setHeaderView(withStaticView: HeaderView())
+        sectionHeader.setHeaderHeight(withStaticHeight: 346)
+        tableView.addSection(sectionHeader)
+        let sectionComments = Section()
+        sectionComments.addRow(PlaceDescCell.newRow(placeID: ""))
+        sectionComments.addRow(CommentCell.newRow(comment: ""))
+        sectionComments.addRow(CommentCell.newRow(comment: ""))
+        sectionComments.addRow(CommentCell.newRow(comment: ""))
+        sectionComments.addRow(CommentCell.newRow(comment: ""))
+        sectionComments.addRow(CommentCell.newRow(comment: ""))
+        tableView.addSection(sectionComments)
     }
 }

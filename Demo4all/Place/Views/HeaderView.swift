@@ -30,5 +30,7 @@ class HeaderView: UIView {
         container.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }
+        
+        starImageView.rounded()
     }
 }
