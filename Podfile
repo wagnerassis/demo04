@@ -6,7 +6,6 @@ def ui_pods
   pod 'SnapKit'
   pod 'OCMixins'
   pod 'PKHUD'
-  pod 'IQKeyboardManagerSwift'
   pod 'TableManager'
   pod 'Kingfisher'
   pod 'Alamofire', '~> 4.8.2'

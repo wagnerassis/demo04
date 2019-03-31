@@ -1,7 +1,6 @@
 import UIKit
 import SnapKit
 import OCMixins
-import IQKeyboardManagerSwift
 
 class BaseViewController: UIViewController, TransparentNavigation {
     //MARK: Properties
@@ -59,5 +58,3 @@ class BaseViewController: UIViewController, TransparentNavigation {
     }
 
 }
-
-extension BaseViewController: UIGestureRecognizerDelegate { }
