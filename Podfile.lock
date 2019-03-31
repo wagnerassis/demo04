@@ -2,8 +2,10 @@ PODS:
   - Alamofire (4.8.2)
   - IQKeyboardManagerSwift (6.2.1)
   - Kingfisher (5.3.1)
+  - Nimble (8.0.1)
   - OCMixins (1.3.2)
   - PKHUD (5.2.1)
+  - Quick (2.0.0)
   - SnapKit (4.2.0)
   - TableManager (1.11.0)
 
@@ -11,8 +13,10 @@ DEPENDENCIES:
   - Alamofire (~> 4.8.2)
   - IQKeyboardManagerSwift
   - Kingfisher
+  - Nimble
   - OCMixins
   - PKHUD
+  - Quick
   - SnapKit
   - TableManager
 
@@ -21,8 +25,10 @@ SPEC REPOS:
     - Alamofire
     - IQKeyboardManagerSwift
     - Kingfisher
+    - Nimble
     - OCMixins
     - PKHUD
+    - Quick
     - SnapKit
     - TableManager
 
@@ -30,11 +36,13 @@ SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   IQKeyboardManagerSwift: 0f0ae8935360b4003e6ea1ac7c19898f01e2f7c7
   Kingfisher: d9e7e0b209b59b8f9873aa2f37654e81a7beea51
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
   OCMixins: 606edbfe8e1bb1d5a3ff13046e33ba0ed9ffba20
   PKHUD: 4e6162c4c39ac367c6934e9855c6b4762ee16256
+  Quick: ce1276c7c27ba2da3cb2fd0cde053c3648b3b22d
   SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
   TableManager: f37977cc9709548060b42dd3cb872ee7668cfe22
 
-PODFILE CHECKSUM: 1d2c050be8821087553487f7c05dc9d17b6c0963
+PODFILE CHECKSUM: 806641e9fd6f6d1145263deb618283d23d37349b
 
 COCOAPODS: 1.7.0.beta.3

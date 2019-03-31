@@ -12,8 +12,18 @@ def ui_pods
   pod 'Alamofire', '~> 4.8.2'
 end
 
+def test_pods
+  pod 'Quick'
+  pod 'Nimble'
+end
+
 target 'Demo4all' do
   ui_pods
+  
+end
+
+target 'Demo4allTests' do
+  test_pods
 end
 
 post_install do |installer_representation|
