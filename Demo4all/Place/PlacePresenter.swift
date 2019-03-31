@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 protocol PlaceDelegate: class {
-    
+    func tapToService(viewController: UIViewController)
 }
 
 protocol PlaceDataSource: class {
@@ -10,18 +10,30 @@ protocol PlaceDataSource: class {
 }
 
 class PlacePresenter {
-    var delegate: PlaceDelegate
-    weak var dataSource: PlaceDataSource?
+    private weak var view: PlaceView?
+    private var delegate: PlaceDelegate
+    private let placeId: String
     
-    init(delegate: PlaceDelegate) {
+    init(placeId: String, delegate: PlaceDelegate) {
         self.delegate = delegate
+        self.placeId = placeId
     }
     
-    func fetchTasks(placeId: String) {
+    func attachView(_ view: PlaceView) {
+        self.view = view
+    }
+    
+    func fetchTasks() {
         PlaceService.fetchTarefa (placeId: placeId){ [weak self] (place, errorMessage) in
             guard let place = place else { return }
-            self?.dataSource?.placeFetched(place: place)
+            self?.view?.setTitle(title: place.titulo)
+            self?.view?.setPlaceDescView(place: place)
+            self?.view?.setComments(comments: place.comentarios)
+            self?.view?.setHeaderTitle(title: "\(place.cidade) - \(place.bairro)")
         }
     }
 
+    func goToServices(viewController: UIViewController) {
+        delegate.tapToService(viewController: viewController)
+    }
 }

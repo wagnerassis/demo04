@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2144AAE922511A97009E0A03 /* PlaceProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2144AAE822511A97009E0A03 /* PlaceProtocols.swift */; };
 		216E998D224F1B05005D7C0A /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 216E998C224F1B05005D7C0A /* HeaderView.xib */; };
 		216E998F224F21D1005D7C0A /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E998E224F21D1005D7C0A /* CommentCell.swift */; };
 		216E9991224F21EC005D7C0A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E9990224F21EC005D7C0A /* HeaderView.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		1D8820DFD3BA9312770BF236 /* Pods-Demo4all.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo4all.release.xcconfig"; path = "Target Support Files/Pods-Demo4all/Pods-Demo4all.release.xcconfig"; sourceTree = "<group>"; };
+		2144AAE822511A97009E0A03 /* PlaceProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceProtocols.swift; sourceTree = "<group>"; };
 		216E998C224F1B05005D7C0A /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		216E998E224F21D1005D7C0A /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		216E9990224F21EC005D7C0A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 				C48C4BBB224BF53500D7387B /* PlaceViewController.swift */,
 				C48C4BBD224BF54600D7387B /* PlacePresenter.swift */,
 				C48C4BBF224BF55800D7387B /* PlaceRouter.swift */,
+				2144AAE822511A97009E0A03 /* PlaceProtocols.swift */,
 			);
 			path = Place;
 			sourceTree = "<group>";
@@ -388,6 +391,7 @@
 				C4EFFDBE224EC0F900A4BA8B /* PlaceDescCell.swift in Sources */,
 				C48C4BDC224BF7A000D7387B /* StringExtensions.swift in Sources */,
 				C48C4BE0224BF7A000D7387B /* ImageViewExtensions.swift in Sources */,
+				2144AAE922511A97009E0A03 /* PlaceProtocols.swift in Sources */,
 				216E9991224F21EC005D7C0A /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

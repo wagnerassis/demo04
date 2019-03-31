@@ -157,8 +157,22 @@
                     </mapView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HPB-zg-0b0">
                         <rect key="frame" x="0.0" y="284.5" width="330" height="20"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porto ALegre, 000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDS-XV-uK0">
+                                <rect key="frame" x="8" y="0.0" width="259" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Qfu-FI-kb1"/>
+                                    <constraint firstAttribute="width" constant="259" id="dHs-2a-BxX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.75793856380000002" green="0.55209690330000005" blue="0.21557581419999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="lDS-XV-uK0" firstAttribute="top" secondItem="HPB-zg-0b0" secondAttribute="top" id="B67-cz-NM4"/>
+                            <constraint firstItem="lDS-XV-uK0" firstAttribute="leading" secondItem="HPB-zg-0b0" secondAttribute="leading" constant="8" id="HcL-DK-pkA"/>
                             <constraint firstAttribute="height" constant="20" id="m2B-ll-gK6"/>
                         </constraints>
                     </view>
@@ -189,6 +203,7 @@
             </tableViewCellContentView>
             <connections>
                 <outlet property="addressButton" destination="2yZ-0d-nwG" id="FIa-vh-gUC"/>
+                <outlet property="addressLabel" destination="lDS-XV-uK0" id="8wD-4i-HTa"/>
                 <outlet property="commentButton" destination="2wD-u2-QWT" id="s0K-UF-WRh"/>
                 <outlet property="descLabel" destination="dWc-5n-HIS" id="8se-hf-Yif"/>
                 <outlet property="favoriteButton" destination="C0P-5H-BaL" id="RNP-3d-bdU"/>

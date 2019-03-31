@@ -5,6 +5,7 @@ import SnapKit
 
 class PlaceViewController: BaseViewController {
     var tableView = UITableView()
+    let sectionComments = Section()
     var presenter: PlacePresenter
     
     //MARK: Init
@@ -17,12 +18,12 @@ class PlaceViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupSearchNavigationBarLayout(title: "Porto Alegre - Moinhos de Vento")
         view.backgroundColor = UIColor.lightUltraGray
         view.addSubview(tableView)
         setupTableView()
         registerCell()
-        putCells()
+        presenter.attachView(self)
+        presenter.fetchTasks()
     }
     
     fileprivate func setupTableView() {
@@ -47,19 +48,31 @@ class PlaceViewController: BaseViewController {
         tableView.register(UINib(nibName: "CommentCell", bundle: nil), forCellReuseIdentifier: "CommentCell")
         tableView.register(UINib(nibName: "PlaceDescCell", bundle: nil), forCellReuseIdentifier: "PlaceDescCell")
     }
+}
+
+extension PlaceViewController: PlaceView {
+    func setHeaderTitle(title: String) {
+        setupSearchNavigationBarLayout(title: title)
+    }
     
-    fileprivate func putCells() {
+    func setTitle(title: String) {
         let sectionHeader = Section()
-        sectionHeader.setHeaderView(withStaticView: HeaderView())
+        let headerView = HeaderView()
+        headerView.titleHeader.text = title
+        sectionHeader.setHeaderView(withStaticView: headerView)
         sectionHeader.setHeaderHeight(withStaticHeight: 346)
         tableView.addSection(sectionHeader)
-        let sectionComments = Section()
-        sectionComments.addRow(PlaceDescCell.newRow(placeID: ""))
-        sectionComments.addRow(CommentCell.newRow(comment: ""))
-        sectionComments.addRow(CommentCell.newRow(comment: ""))
-        sectionComments.addRow(CommentCell.newRow(comment: ""))
-        sectionComments.addRow(CommentCell.newRow(comment: ""))
-        sectionComments.addRow(CommentCell.newRow(comment: ""))
+    }
+    
+    func setPlaceDescView(place: Place) {
+        sectionComments.addRow(PlaceDescCell.newRow(place: place))
+    }
+    
+    func setComments(comments: [Comentario]) {
+        comments.forEach { (comment) in
+            sectionComments.addRow(CommentCell.newRow(comment: comment))
+        }
         tableView.addSection(sectionComments)
+        tableView.reloadData()
     }
 }

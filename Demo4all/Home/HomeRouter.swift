@@ -13,6 +13,6 @@ class HomeRouter {
 
 extension HomeRouter: HomeDelegate {
     func tapToDetail(placeID: String, viewController: UIViewController) {
-        viewController.pushViewController(PlaceRouter().createModule())
+        viewController.pushViewController(PlaceRouter().createModule(placeId: placeID))
     }
 }

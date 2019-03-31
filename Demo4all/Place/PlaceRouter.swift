@@ -3,8 +3,8 @@ import UIKit
 
 class PlaceRouter {
     
-    func createModule() -> UIViewController {
-        let presenter = PlacePresenter(delegate: self)
+    func createModule(placeId: String) -> UIViewController {
+        let presenter = PlacePresenter(placeId: placeId, delegate: self)
         let placeViewController = PlaceViewController(presenter: presenter)
         
         return placeViewController
@@ -12,5 +12,7 @@ class PlaceRouter {
 }
 
 extension PlaceRouter: PlaceDelegate {
-
+    func tapToService(viewController: UIViewController) {
+        
+    }
 }

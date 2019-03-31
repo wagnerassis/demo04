@@ -60,9 +60,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="PhotoImageView" destination="S3g-oe-BPh" id="5Gn-HC-VZr"/>
                 <outlet property="commentLabel" destination="Nyp-ps-Mwt" id="afB-cc-qLo"/>
                 <outlet property="identificationLabel" destination="gti-et-lEf" id="x7U-Lw-V53"/>
+                <outlet property="photoImageView" destination="S3g-oe-BPh" id="3rY-eK-cku"/>
             </connections>
             <point key="canvasLocation" x="111.59420289855073" y="-92.410714285714278"/>
         </tableViewCell>

@@ -13,13 +13,16 @@ class PlaceDescCell: UITableViewCell {
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var locationLogoView: UIImageView!
+    @IBOutlet weak var addressLabel: UILabel!
     
-    static func newRow(placeID: String) -> Row {
+    static func newRow(place: Place) -> Row {
         let row = Row(identifier: "PlaceDescCell")
         row.setHeight(withStaticHeight: 305)
         row.setConfiguration { (row, cell, indexPath) in
             guard let cell = cell as? PlaceDescCell else { return }
             cell.selectionStyle = .none
+            cell.addressLabel.text = place.endereco
+            cell.descLabel.text = place.texto
             cell.locationLogoView.rounded()
             cell.addShadow()
         }
