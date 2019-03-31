@@ -28,11 +28,13 @@
                                     <constraint firstAttribute="height" constant="1" id="gOX-b5-1Rp"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWc-5n-HIS">
-                                <rect key="frame" x="20" y="71" width="290" height="102"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWc-5n-HIS">
+                                <rect key="frame" x="20" y="75" width="290" height="102"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="5hC-yu-DrR"/>
+                                </constraints>
                                 <string key="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel lectus at orci dignissim interdum eget quis purus. Etiam blandit enim eu eros dictum bibendum. Pellentesque habitan ahahahahah ahahahahahha ahahaha</string>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
                                 <color key="textColor" red="0.75793856382369995" green="0.5520969033241272" blue="0.21557581424713135" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -146,10 +148,13 @@
                             <constraint firstItem="Rll-5E-2n1" firstAttribute="top" secondItem="MW3-R6-frs" secondAttribute="bottom" constant="10" id="4Dt-dB-n6Z"/>
                             <constraint firstItem="Rll-5E-2n1" firstAttribute="leading" secondItem="VmA-M8-lLi" secondAttribute="leading" constant="15" id="6QX-g5-IW2"/>
                             <constraint firstAttribute="trailing" secondItem="Rll-5E-2n1" secondAttribute="trailing" constant="15" id="BEp-2W-7C3"/>
+                            <constraint firstItem="dWc-5n-HIS" firstAttribute="top" secondItem="Rll-5E-2n1" secondAttribute="bottom" constant="2" id="DGI-oz-Mrv"/>
                             <constraint firstAttribute="height" constant="181" id="E00-qx-mdL"/>
                             <constraint firstItem="MW3-R6-frs" firstAttribute="top" secondItem="VmA-M8-lLi" secondAttribute="top" constant="12" id="EPR-nR-PEo"/>
+                            <constraint firstItem="dWc-5n-HIS" firstAttribute="leading" secondItem="VmA-M8-lLi" secondAttribute="leading" constant="20" id="MHd-HZ-IuE"/>
                             <constraint firstItem="MW3-R6-frs" firstAttribute="leading" secondItem="VmA-M8-lLi" secondAttribute="leading" constant="31" id="NkU-j1-swE"/>
                             <constraint firstAttribute="trailing" secondItem="MW3-R6-frs" secondAttribute="trailing" constant="32" id="UiW-2f-1gR"/>
+                            <constraint firstAttribute="trailing" secondItem="dWc-5n-HIS" secondAttribute="trailing" constant="20" id="jN7-Ld-B0t"/>
                         </constraints>
                     </view>
                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DNG-f5-xy6">

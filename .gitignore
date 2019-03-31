@@ -44,10 +44,10 @@ fastlane/screenshots
 fastlane/test_output
 
 Pods
-Agibank-US/Podfile.lock
-Agibank-US/Agibank-US.xcodeproj/xcuserdata
-Agibank-US/Agibank-US.xcworkspace/xcuserdata
-Agibank-US/Carthage
+Demo4all/Podfile.lock
+Demo4all/Demo4all.xcodeproj/xcuserdata
+Demo4all/Demo4all.xcworkspace/xcuserdata
+Demo4all/Carthage
 fastlane/derived_data_path
 fastlane/README.md
 fastlane/report.xml
@@ -101,14 +101,14 @@ xcuserdata/*
 # you should judge for yourself, the pros and cons are mentioned at:
 # https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
 #
-Agibank-US/Pods/
+Demo4all/Pods/
 
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
 # Carthage/Checkouts
 
-Agibank-US/Carthage/Build
+Demo4all/Carthage/Build
 
 # fastlane
 #
@@ -121,9 +121,9 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
-Agibank-US/Agibank-US.xcworkspace/xcuserdata
+Demo04/Demo4all.xcworkspace/xcuserdata
 .DS_Store
-Agibank-US/Fabric.framework
+Demo4all/Fabric.framework
 report.xml
-Agibank-US/Agibank-US.xcworkspace/xcuserdata/ilegra0195.xcuserdatad/UserInterfaceState.xcuserstate
-Agibank-US.xcworkspace/xcuserdata/ilegra0195.xcuserdatad/UserInterfaceState.xcuserstate
+demo04/Demo4all.xcworkspace/xcuserdata/ilegra0195.xcuserdatad/UserInterfaceState.xcuserstate
+Demo4all.xcworkspace/xcuserdata/ilegra0195.xcuserdatad/UserInterfaceState.xcuserstate

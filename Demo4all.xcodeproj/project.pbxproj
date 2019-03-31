@@ -11,6 +11,7 @@
 		216E998D224F1B05005D7C0A /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 216E998C224F1B05005D7C0A /* HeaderView.xib */; };
 		216E998F224F21D1005D7C0A /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E998E224F21D1005D7C0A /* CommentCell.swift */; };
 		216E9991224F21EC005D7C0A /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216E9990224F21EC005D7C0A /* HeaderView.swift */; };
+		21B8BA822251460500C32FB6 /* ServicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B8BA812251460500C32FB6 /* ServicoViewController.swift */; };
 		C48C4BA4224BB8D200D7387B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C4BA3224BB8D200D7387B /* AppDelegate.swift */; };
 		C48C4BA6224BB8D200D7387B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C48C4BA5224BB8D200D7387B /* HomeViewController.swift */; };
 		C48C4BAB224BB8D400D7387B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C48C4BAA224BB8D400D7387B /* Assets.xcassets */; };
@@ -51,6 +52,7 @@
 		216E998C224F1B05005D7C0A /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		216E998E224F21D1005D7C0A /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		216E9990224F21EC005D7C0A /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		21B8BA812251460500C32FB6 /* ServicoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicoViewController.swift; sourceTree = "<group>"; };
 		260721AE8D29227CBD45D3A2 /* Pods-Demo4all.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo4all.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Demo4all/Pods-Demo4all.debug.xcconfig"; sourceTree = "<group>"; };
 		63E755023389ED8FCD12EB02 /* Pods-Demo4all.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo4all.release.xcconfig"; path = "Pods/Target Support Files/Pods-Demo4all/Pods-Demo4all.release.xcconfig"; sourceTree = "<group>"; };
 		94F949CCA91BA1FF3C32D8B0 /* Pods-Demo4all.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Demo4all.debug.xcconfig"; path = "Target Support Files/Pods-Demo4all/Pods-Demo4all.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21B8BA80225145DE00C32FB6 /* Servico */ = {
+			isa = PBXGroup;
+			children = (
+				21B8BA812251460500C32FB6 /* ServicoViewController.swift */,
+			);
+			path = Servico;
+			sourceTree = "<group>";
+		};
 		2C9018F30965AE1962939426 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,16 +152,17 @@
 		C48C4BA2224BB8D200D7387B /* Demo4all */ = {
 			isa = PBXGroup;
 			children = (
+				C48C4BA3224BB8D200D7387B /* AppDelegate.swift */,
+				C48C4BAA224BB8D400D7387B /* Assets.xcassets */,
+				C48C4BAC224BB8D400D7387B /* LaunchScreen.storyboard */,
+				C48C4BAF224BB8D400D7387B /* Info.plist */,
 				C48C4BD0224BF79500D7387B /* Extensions */,
 				C48C4BC9224BF77200D7387B /* Utils */,
 				C48C4BC4224BF74800D7387B /* Base classes */,
 				C48C4BC1224BF58100D7387B /* Service */,
 				C48C4BB6224BF45300D7387B /* Place */,
+				21B8BA80225145DE00C32FB6 /* Servico */,
 				C48C4BB5224BF44000D7387B /* Home */,
-				C48C4BA3224BB8D200D7387B /* AppDelegate.swift */,
-				C48C4BAA224BB8D400D7387B /* Assets.xcassets */,
-				C48C4BAC224BB8D400D7387B /* LaunchScreen.storyboard */,
-				C48C4BAF224BB8D400D7387B /* Info.plist */,
 			);
 			path = Demo4all;
 			sourceTree = "<group>";
@@ -366,6 +377,7 @@
 			files = (
 				C48C4BBE224BF54600D7387B /* PlacePresenter.swift in Sources */,
 				C4EFFDB5224E802F00A4BA8B /* Path.swift in Sources */,
+				21B8BA822251460500C32FB6 /* ServicoViewController.swift in Sources */,
 				C48C4BDB224BF7A000D7387B /* ScreenExtensions.swift in Sources */,
 				C48C4BB8224BF50400D7387B /* HomePresenter.swift in Sources */,
 				216E998F224F21D1005D7C0A /* CommentCell.swift in Sources */,

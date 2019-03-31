@@ -11,7 +11,7 @@ class CommentCell: UITableViewCell {
     
     static func newRow(comment: Comentario) -> Row {
         let row = Row(identifier: "CommentCell")
-        row.setHeight(withStaticHeight: 100)
+        row.setHeight(withStaticHeight: 126)
         row.setConfiguration { (row, cell, indexPath) in
             guard let cell = cell as? CommentCell else { return }
             cell.photoImageView.rounded()

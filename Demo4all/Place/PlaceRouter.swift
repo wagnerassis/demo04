@@ -13,6 +13,6 @@ class PlaceRouter {
 
 extension PlaceRouter: PlaceDelegate {
     func tapToService(viewController: UIViewController) {
-        
+       viewController.pushViewController(ServicoViewController())
     }
 }

@@ -32,6 +32,7 @@ class PlaceViewController: BaseViewController {
         tableView.showsVerticalScrollIndicator = false
         tableView.showsHorizontalScrollIndicator = false
         tableView.allowsSelection = true
+        tableView.backgroundColor = .lightUltraGray
         tableView.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
         
         contentView.addSubview(tableView)
@@ -55,17 +56,16 @@ extension PlaceViewController: PlaceView {
         setupSearchNavigationBarLayout(title: title)
     }
     
-    func setTitle(title: String) {
+    func setPlaceDetailView(place: Place) {
         let sectionHeader = Section()
         let headerView = HeaderView()
-        headerView.titleHeader.text = title
+        headerView.titleHeader.text = place.titulo
+        headerView.headerImageView.downloadCustom(url: place.urlFoto)
+        headerView.starImageView.downloadCustom(url: place.urlLogo)
         sectionHeader.setHeaderView(withStaticView: headerView)
         sectionHeader.setHeaderHeight(withStaticHeight: 346)
         tableView.addSection(sectionHeader)
-    }
-    
-    func setPlaceDescView(place: Place) {
-        sectionComments.addRow(PlaceDescCell.newRow(place: place))
+        sectionComments.addRow(PlaceDescCell.newRow(place: place, delegate: self))
     }
     
     func setComments(comments: [Comentario]) {
@@ -74,5 +74,24 @@ extension PlaceViewController: PlaceView {
         }
         tableView.addSection(sectionComments)
         tableView.reloadData()
+    }
+}
+
+extension PlaceViewController: PlaceDescCellDelegate {
+    func goToServicos() {
+        presenter.goToServices(viewController: self)
+    }
+    
+    func showAdress(endereco: String) {
+        let alert = UIAlertController(title: "Endereço", message: endereco, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
+    
+    func srollToComments() {
+        DispatchQueue.main.async { [weak self] in
+            let index = IndexPath(row: 1, section: 1)
+            self?.tableView.scrollToRow(at: index, at: .middle, animated: true)
+        }
     }
 }

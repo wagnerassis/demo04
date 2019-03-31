@@ -26,8 +26,7 @@ class PlacePresenter {
     func fetchTasks() {
         PlaceService.fetchTarefa (placeId: placeId){ [weak self] (place, errorMessage) in
             guard let place = place else { return }
-            self?.view?.setTitle(title: place.titulo)
-            self?.view?.setPlaceDescView(place: place)
+            self?.view?.setPlaceDetailView(place: place)
             self?.view?.setComments(comments: place.comentarios)
             self?.view?.setHeaderTitle(title: "\(place.cidade) - \(place.bairro)")
         }
