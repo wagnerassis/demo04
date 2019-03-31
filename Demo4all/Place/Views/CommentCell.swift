@@ -16,6 +16,9 @@ class CommentCell: UITableViewCell {
             guard let cell = cell as? CommentCell else { return }
             cell.PhotoImageView.rounded()
             cell.addShadow()
+            
+            cell.identificationLabel.textColor = .orangeDefault
+            cell.commentLabel.textColor = .orangeDefault
         }
         return row
     }

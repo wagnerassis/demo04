@@ -22,4 +22,7 @@ extension UIColor {
             alpha: CGFloat(1.0)
         )
     }
+    
+    static let lightUltraGray = hexStringToUIColor(hex: "#edeeef")
+    static let orangeDefault = hexStringToUIColor(hex: "#ca892b")
 }

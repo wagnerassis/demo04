@@ -21,71 +21,11 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VmA-M8-lLi">
                         <rect key="frame" x="0.0" y="0.0" width="330" height="181"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECY-yc-NEo">
-                                <rect key="frame" x="15" y="12" width="35" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="I1c-Aj-0cC"/>
-                                    <constraint firstAttribute="width" constant="35" id="vH4-tz-zxQ"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="26" maxY="0.0"/>
-                                <state key="normal" title="Ligar" image="phone">
-                                    <color key="titleColor" red="0.79787999389999997" green="0.54009342189999998" blue="0.098482914269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmn-wd-ixB">
-                                <rect key="frame" x="78" y="12" width="35" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="d7O-Rz-Q9b"/>
-                                    <constraint firstAttribute="height" constant="35" id="fLp-aO-xsP"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="36" maxY="0.0"/>
-                                <state key="normal" title="Serviços" image="service">
-                                    <color key="titleColor" red="0.79787999389999997" green="0.54009342189999998" blue="0.098482914269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yZ-0d-nwG">
-                                <rect key="frame" x="142" y="12" width="35" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="16r-XX-5qB"/>
-                                    <constraint firstAttribute="width" constant="35" id="Ssr-ZM-bKA"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="37" maxY="0.0"/>
-                                <state key="normal" title="endereço" image="location">
-                                    <color key="titleColor" red="0.79787999389999997" green="0.54009342189999998" blue="0.098482914269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wD-u2-QWT">
-                                <rect key="frame" x="203" y="12" width="35" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="Zm0-PU-inR"/>
-                                    <constraint firstAttribute="height" constant="35" id="c49-cb-jgO"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="45" maxY="0.0"/>
-                                <state key="normal" title="comentarios" image="chat">
-                                    <color key="titleColor" red="0.79787999389999997" green="0.54009342189999998" blue="0.098482914269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0P-5H-BaL">
-                                <rect key="frame" x="261" y="12" width="35" height="35"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="35" id="9BS-Ws-mRr"/>
-                                    <constraint firstAttribute="height" constant="35" id="Joc-Y4-YP2"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
-                                <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="37" maxY="0.0"/>
-                                <state key="normal" title="favoritos" image="fav">
-                                    <color key="titleColor" red="0.79787999389999997" green="0.54009342189999998" blue="0.098482914269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rll-5E-2n1">
-                                <rect key="frame" x="15" y="67" width="290" height="1"/>
+                                <rect key="frame" x="15" y="72" width="300" height="1"/>
                                 <color key="backgroundColor" white="0.88137664098173507" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="q6X-9j-4Vs"/>
+                                    <constraint firstAttribute="height" constant="1" id="gOX-b5-1Rp"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWc-5n-HIS">
@@ -96,23 +36,120 @@
                                 <color key="textColor" red="0.75793856382369995" green="0.5520969033241272" blue="0.21557581424713135" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MW3-R6-frs">
+                                <rect key="frame" x="31" y="12" width="267" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ECY-yc-NEo">
+                                        <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="1ju-zn-whz"/>
+                                            <constraint firstAttribute="height" constant="35" id="I1c-Aj-0cC"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="eDE-ea-EnD"/>
+                                            <constraint firstAttribute="width" constant="35" id="vH4-tz-zxQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="26" maxY="0.0"/>
+                                        <state key="normal" title="Ligar" image="phone">
+                                            <color key="titleColor" red="0.79787999389999997" green="0.54009342189999998" blue="0.098482914269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapLigar:" destination="Dpv-X4-jTS" eventType="touchUpInside" id="09D-lc-q6X"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmn-wd-ixB">
+                                        <rect key="frame" x="53" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="1GK-zt-7hG"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="CNx-ZD-5Vc"/>
+                                            <constraint firstAttribute="width" constant="35" id="d7O-Rz-Q9b"/>
+                                            <constraint firstAttribute="height" constant="35" id="fLp-aO-xsP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="36" maxY="0.0"/>
+                                        <state key="normal" title="Serviços" image="service">
+                                            <color key="titleColor" red="0.79787999389999997" green="0.54009342189999998" blue="0.098482914269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapServicos:" destination="Dpv-X4-jTS" eventType="touchUpInside" id="sk4-Ys-J7A"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2yZ-0d-nwG">
+                                        <rect key="frame" x="108.5" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="16r-XX-5qB"/>
+                                            <constraint firstAttribute="width" constant="35" id="Ssr-ZM-bKA"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="YxM-N5-Tps"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="nNC-Ke-Ym3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="37" maxY="0.0"/>
+                                        <state key="normal" title="endereço" image="location">
+                                            <color key="titleColor" red="0.79787999389999997" green="0.54009342189999998" blue="0.098482914269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapEndereco:" destination="Dpv-X4-jTS" eventType="touchUpInside" id="GWn-MU-Chi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wD-u2-QWT">
+                                        <rect key="frame" x="165" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="AmR-jS-KOZ"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="IIj-7m-MSa"/>
+                                            <constraint firstAttribute="width" constant="35" id="Zm0-PU-inR"/>
+                                            <constraint firstAttribute="height" constant="35" id="c49-cb-jgO"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="45" maxY="0.0"/>
+                                        <state key="normal" title="comentarios" image="chat">
+                                            <color key="titleColor" red="0.79787999389999997" green="0.54009342189999998" blue="0.098482914269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapComentarios:" destination="Dpv-X4-jTS" eventType="touchUpInside" id="pAF-Wh-zBc"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="fill" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0P-5H-BaL">
+                                        <rect key="frame" x="223" y="0.0" width="35" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="35" id="9BS-Ws-mRr"/>
+                                            <constraint firstAttribute="height" constant="35" id="Joc-Y4-YP2"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="buM-ih-qMv"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="35" id="vfK-gA-sFZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="10"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="50" maxX="37" maxY="0.0"/>
+                                        <state key="normal" title="favoritos" image="fav">
+                                            <color key="titleColor" red="0.79787999389999997" green="0.54009342189999998" blue="0.098482914269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="tapFavoritos:" destination="Dpv-X4-jTS" eventType="touchUpInside" id="Nmg-M9-tQT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ECY-yc-NEo" firstAttribute="leading" secondItem="MW3-R6-frs" secondAttribute="leading" id="Nr5-A0-7Zf"/>
+                                    <constraint firstItem="C0P-5H-BaL" firstAttribute="top" secondItem="MW3-R6-frs" secondAttribute="top" id="OPZ-sY-leJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="C0P-5H-BaL" secondAttribute="trailing" constant="9" id="OZz-t9-NcN"/>
+                                    <constraint firstItem="2yZ-0d-nwG" firstAttribute="centerX" secondItem="MW3-R6-frs" secondAttribute="centerX" constant="-7.5" id="UYx-23-58W"/>
+                                    <constraint firstAttribute="height" constant="50" id="a6D-3m-ATn"/>
+                                    <constraint firstItem="2wD-u2-QWT" firstAttribute="top" secondItem="MW3-R6-frs" secondAttribute="top" id="bY6-QB-iYZ"/>
+                                    <constraint firstItem="Pmn-wd-ixB" firstAttribute="top" secondItem="MW3-R6-frs" secondAttribute="top" id="mGC-Xu-WPn"/>
+                                    <constraint firstItem="Pmn-wd-ixB" firstAttribute="leading" secondItem="ECY-yc-NEo" secondAttribute="trailing" constant="18" id="qSL-DZ-Aa9"/>
+                                    <constraint firstItem="C0P-5H-BaL" firstAttribute="leading" secondItem="2wD-u2-QWT" secondAttribute="trailing" constant="23" id="rKi-R4-Qbw"/>
+                                    <constraint firstItem="2yZ-0d-nwG" firstAttribute="top" secondItem="MW3-R6-frs" secondAttribute="top" id="w42-5a-sQi"/>
+                                    <constraint firstItem="ECY-yc-NEo" firstAttribute="top" secondItem="MW3-R6-frs" secondAttribute="top" id="zjM-KI-L8a"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="2wD-u2-QWT" firstAttribute="top" secondItem="VmA-M8-lLi" secondAttribute="top" constant="12" id="54S-pV-9Re"/>
-                            <constraint firstItem="C0P-5H-BaL" firstAttribute="top" secondItem="VmA-M8-lLi" secondAttribute="top" constant="12" id="Dmt-1P-MlE"/>
+                            <constraint firstItem="Rll-5E-2n1" firstAttribute="top" secondItem="MW3-R6-frs" secondAttribute="bottom" constant="10" id="4Dt-dB-n6Z"/>
+                            <constraint firstItem="Rll-5E-2n1" firstAttribute="leading" secondItem="VmA-M8-lLi" secondAttribute="leading" constant="15" id="6QX-g5-IW2"/>
+                            <constraint firstAttribute="trailing" secondItem="Rll-5E-2n1" secondAttribute="trailing" constant="15" id="BEp-2W-7C3"/>
                             <constraint firstAttribute="height" constant="181" id="E00-qx-mdL"/>
-                            <constraint firstItem="2yZ-0d-nwG" firstAttribute="top" secondItem="VmA-M8-lLi" secondAttribute="top" constant="12" id="GDA-bK-QTp"/>
-                            <constraint firstItem="2yZ-0d-nwG" firstAttribute="leading" secondItem="Pmn-wd-ixB" secondAttribute="trailing" constant="29" id="Qup-2C-lFi"/>
-                            <constraint firstAttribute="trailing" secondItem="Rll-5E-2n1" secondAttribute="trailing" constant="25" id="VNI-pn-VPa"/>
-                            <constraint firstItem="ECY-yc-NEo" firstAttribute="top" secondItem="VmA-M8-lLi" secondAttribute="top" constant="12" id="WRV-eX-yQo"/>
-                            <constraint firstItem="Rll-5E-2n1" firstAttribute="top" secondItem="ECY-yc-NEo" secondAttribute="bottom" constant="20" id="WjP-Pn-f3Y"/>
-                            <constraint firstItem="Pmn-wd-ixB" firstAttribute="leading" secondItem="ECY-yc-NEo" secondAttribute="trailing" constant="28" id="eDp-4c-AGd"/>
-                            <constraint firstItem="ECY-yc-NEo" firstAttribute="leading" secondItem="VmA-M8-lLi" secondAttribute="leading" constant="15" id="m0d-hU-3us"/>
-                            <constraint firstItem="2wD-u2-QWT" firstAttribute="leading" secondItem="2yZ-0d-nwG" secondAttribute="trailing" constant="26" id="uvQ-AO-bvk"/>
-                            <constraint firstItem="C0P-5H-BaL" firstAttribute="leading" secondItem="2wD-u2-QWT" secondAttribute="trailing" constant="23" id="vfY-Qm-Mnd"/>
-                            <constraint firstItem="Pmn-wd-ixB" firstAttribute="top" secondItem="VmA-M8-lLi" secondAttribute="top" constant="12" id="xBg-EL-XgZ"/>
-                            <constraint firstItem="Rll-5E-2n1" firstAttribute="leading" secondItem="VmA-M8-lLi" secondAttribute="leading" constant="15" id="zjk-Ev-9Ya"/>
+                            <constraint firstItem="MW3-R6-frs" firstAttribute="top" secondItem="VmA-M8-lLi" secondAttribute="top" constant="12" id="EPR-nR-PEo"/>
+                            <constraint firstItem="MW3-R6-frs" firstAttribute="leading" secondItem="VmA-M8-lLi" secondAttribute="leading" constant="31" id="NkU-j1-swE"/>
+                            <constraint firstAttribute="trailing" secondItem="MW3-R6-frs" secondAttribute="trailing" constant="32" id="UiW-2f-1gR"/>
                         </constraints>
                     </view>
                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="DNG-f5-xy6">

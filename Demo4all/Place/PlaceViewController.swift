@@ -17,6 +17,8 @@ class PlaceViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupSearchNavigationBarLayout(title: "Porto Alegre - Moinhos de Vento")
+        view.backgroundColor = UIColor.lightUltraGray
         view.addSubview(tableView)
         setupTableView()
         registerCell()
@@ -34,7 +36,10 @@ class PlaceViewController: BaseViewController {
         contentView.addSubview(tableView)
         
         tableView.snp.makeConstraints {
-            $0.edges.equalToSuperview()
+            $0.top.bottom.equalToSuperview()
+            $0.left.equalTo(10)
+            $0.right.equalTo(-10)
+            
         }
     }
     

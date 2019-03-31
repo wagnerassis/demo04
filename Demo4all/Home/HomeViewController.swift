@@ -18,7 +18,7 @@ class HomeViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        title = "Home"
+        setupNavigationBarLayout(title: "Home")
         
         setupTableView()
         registerCell()

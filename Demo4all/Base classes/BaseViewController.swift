@@ -11,7 +11,9 @@ class BaseViewController: UIViewController, TransparentNavigation {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupContent()
-        setupNavigationLayout()
+        navigationController?.navigationBar.barTintColor = UIColor.orangeDefault
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white,
+                                                                   .font: UIFont(name: "HelveticaNeue", size: 12) ?? UIFont.systemFont(ofSize: 12)]
         setNeedsStatusBarAppearanceUpdate()
     }
     
@@ -26,26 +28,25 @@ class BaseViewController: UIViewController, TransparentNavigation {
     
     //MARK: Methods
     
-    func setupNavigationBarLayout(title: String = "") {
-        self.title = title
-        
+    func setupSearchNavigationBarLayout(title: String = "") {
+        navigationItem.title = title
         let backItem = UIBarButtonItem()
         backItem.title = ""
         navigationItem.backBarButtonItem = backItem
-        
-        let yourBackImage = UIImage(named: "backButton_icon")
-        self.navigationController?.navigationBar.backIndicatorImage = yourBackImage
-        self.navigationController?.navigationBar.backIndicatorTransitionMaskImage = yourBackImage
-    }
-    
-    func setupNavigationLayout() {
-        navigationItem.title = ""
-        navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         navigationItem.hidesBackButton = false
+        
+        let searchImage = UIImage(named: "searchIco")?.scaleImageToSize(size: CGSize(width: 20, height: 20))
+        let searchItem = UIBarButtonItem(image: searchImage, style: .plain, target: nil, action: nil)
+        searchItem.title = ""
+        navigationItem.rightBarButtonItem = searchItem
     }
     
-    func setupTabbarNavigationLayout(title: String) {
-        tabBarController?.title = title
+    func setupNavigationBarLayout(title: String = "") {
+        navigationItem.title = title
+        let backItem = UIBarButtonItem()
+        backItem.title = ""
+        navigationItem.backBarButtonItem = backItem
+        navigationItem.hidesBackButton = false
     }
     
     func setupContent() {
@@ -55,12 +56,6 @@ class BaseViewController: UIViewController, TransparentNavigation {
         contentView.snp.makeConstraints { (make) in
             make.edges.equalToSuperview()
         }
-    }
-    
-    func updateBackgroundScene(image: UIImage?) {
-        guard let image = image else { return }
-        guard let imageScaled = image.scaleImageToSize(size: view.bounds.size) else { return }
-        view.backgroundColor = UIColor(patternImage: imageScaled)
     }
 
 }
